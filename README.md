@@ -1,11 +1,6 @@
 # RecipeRealm
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Recipe Realm - Flutter Recipe App</title>
-</head>
 <body>
 <h1>Recipe Realm</h1>
 <p>Welcome to Recipe Realm, a Flutter-based recipe app that features a collection of various meals with detailed ingredients, cooking instructions, and filters for easy recipe browsing.</p>
