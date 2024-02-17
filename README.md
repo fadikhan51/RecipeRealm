@@ -22,7 +22,6 @@
 <ul>
   <li>Flutter SDK</li>
   <li>Dart Programming Language</li>
-  <li>Firebase (for backend and data storage)</li>
 </ul>
 
 <h2>Getting Started:</h2>
