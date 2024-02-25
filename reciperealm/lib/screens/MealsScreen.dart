@@ -6,11 +6,11 @@ import '../models/category.dart';
 import '../models/meal.dart';
 
 class MealsScreen extends StatelessWidget {
-  final String category;
+  final String? category;
   final List<Meal> meals;
   final Function(Meal meal) onTapFav;
 
-  MealsScreen({super.key, required this.category, required this.meals, required this.onTapFav});
+  MealsScreen({super.key, this.category, required this.meals, required this.onTapFav});
 
   @override
   Widget build(BuildContext context) {
@@ -43,11 +43,13 @@ class MealsScreen extends StatelessWidget {
         return MealsItem(meal: meals[ind], onTapFav : onTapFav);
       });
     }
-    // print(meals.length);
+    if(category == null) {
+      return activeContent;
+    }
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(category),
+        title: Text(category!),
       ),
       body: activeContent,
     );
